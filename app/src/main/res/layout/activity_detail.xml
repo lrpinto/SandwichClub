@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ScrollView"
+    android:background="@color/myPrimaryColorLight"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myPrimaryColorLight"
+        android:labelFor="@+id/also_known_label_tv"
+        tools:context="com.udacity.sandwichclub.DetailActivity">
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/sandwich_picture_content_description"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/also_known_label_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/myPrimaryColor"
+            android:paddingBottom="@dimen/label_bottom_padding"
+            android:paddingLeft="@dimen/text_view_padding_left"
+            android:paddingRight="@dimen/text_view_padding_right"
+            android:paddingTop="@dimen/label_top_padding"
+            android:text="@string/detail_also_known_as_label"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_iv" />
+
+        <TextView
+            android:id="@+id/also_known_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/myPrimaryColorDark"
+            android:paddingBottom="@dimen/input_bottom_padding"
+            android:paddingLeft="@dimen/text_view_padding_left"
+            android:paddingRight="@dimen/text_view_padding_right"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/also_known_label_tv" />
+
+        <TextView
+            android:id="@+id/ingredients_label_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/myPrimaryColor"
+            android:paddingBottom="@dimen/label_bottom_padding"
+            android:paddingLeft="@dimen/text_view_padding_left"
+            android:paddingRight="@dimen/text_view_padding_right"
+            android:paddingTop="@dimen/label_top_padding"
+            android:text="@string/detail_ingredients_label"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/also_known_tv" />
+
+        <TextView
+            android:id="@+id/ingredients_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/myPrimaryColorDark"
+            android:paddingBottom="@dimen/input_bottom_padding"
+            android:paddingLeft="@dimen/text_view_padding_left"
+            android:paddingRight="@dimen/text_view_padding_right"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ingredients_label_tv" />
+
+        <TextView
+            android:id="@+id/origin_label_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/myPrimaryColor"
+            android:paddingBottom="@dimen/label_bottom_padding"
+            android:paddingLeft="@dimen/text_view_padding_left"
+            android:paddingRight="@dimen/text_view_padding_right"
+            android:paddingTop="@dimen/label_top_padding"
+            android:text="@string/detail_place_of_origin_label"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ingredients_tv" />
+
+        <TextView
+            android:id="@+id/origin_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/myPrimaryColorDark"
+            android:paddingBottom="@dimen/input_bottom_padding"
+            android:paddingLeft="@dimen/text_view_padding_left"
+            android:paddingRight="@dimen/text_view_padding_right"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/origin_label_tv" />
+
+
+        <TextView
+            android:id="@+id/description_label_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/myPrimaryColor"
+            android:paddingBottom="@dimen/label_bottom_padding"
+            android:paddingLeft="@dimen/text_view_padding_left"
+            android:paddingRight="@dimen/text_view_padding_right"
+            android:paddingTop="@dimen/label_top_padding"
+            android:text="@string/detail_description_label"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/origin_tv" />
+
+        <TextView
+            android:id="@+id/description_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/myPrimaryColorDark"
+            android:paddingBottom="@dimen/input_bottom_padding"
+            android:paddingLeft="@dimen/text_view_padding_left"
+            android:paddingRight="@dimen/text_view_padding_right"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description_label_tv" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
